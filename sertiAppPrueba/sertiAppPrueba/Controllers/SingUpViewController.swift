@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SingUpViewController: UIViewController {
     
@@ -21,8 +22,8 @@ class SingUpViewController: UIViewController {
         super.viewDidLoad()
 
         setupElements()
+        sendUsrData(email: "lindsay.ferguson@reqres.in", pass: "asdfg")
 
-        // Do any additional setup after loading the view.
     }
 
     //Verifica los campos y valida que los datos son correctos, si todo esta bien la funcion devuelve nil, en otro caso devuelve mensaje de error
@@ -72,6 +73,30 @@ class SingUpViewController: UIViewController {
             errorLabel.text = message
             errorLabel.alpha = 1
     }
+    
+//Funcionpara mandar el registro del usuario a la API
+    
+    func sendUsrData(email: String, pass: String) {
+        
+        let urlString = "https://reqres.in/api/register"
+        let urlToRequest = URL(string: urlString)!
+        //Se crea el diccionario con parametros a enviar
+        let dictionaryToSend = [
+            "email" : email,
+            "password": pass
+        ]
+        //Peticion Post
+        AF.request(urlToRequest, method: .post, parameters: dictionaryToSend , encoding: JSONEncoding.default)
+            .responseJSON { (response) in
+            switch response.result {
+                case .success:
+                    debugPrint(response)
+                    //print(" Respuesta a peticion POST: \(response.result)")
+                case .failure(let error):
+                    print(error)
+            }//END SC
+        }//END Alamorife
+    }//END sendUsrData
     
 
 
