@@ -116,6 +116,9 @@
                                             <constraint firstAttribute="height" constant="50" id="5x7-86-uLC"/>
                                         </constraints>
                                         <state key="normal" title="Sing Up"/>
+                                        <connections>
+                                            <action selector="signUpBtnTapped:" destination="tmh-dV-CZ3" eventType="touchUpInside" id="YD8-lB-l0L"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twh-Hm-OPH">
                                         <rect key="frame" x="0.0" y="350" width="334" height="65"/>
