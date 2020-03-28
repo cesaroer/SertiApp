@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="5jR-he-cnk">
+            <objects>
+                <viewController storyboardIdentifier="homeVC" id="mxc-R9-P3R" customClass="HomeViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BQN-lI-HrD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1p-q1-ma1">
+                                <rect key="frame" x="20" y="61" width="134" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Egw-gD-gqt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="FeD-kX-2wR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="O3h-Dh-o43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w1p-q1-ma1" firstAttribute="leading" secondItem="3MB-34-z7s" secondAttribute="leading" constant="20" id="Btj-Bq-a6i"/>
+                            <constraint firstItem="w1p-q1-ma1" firstAttribute="top" secondItem="3MB-34-z7s" secondAttribute="top" constant="17" id="ro4-MM-ZwN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3MB-34-z7s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Co-wE-2u8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="66"/>
+        </scene>
+    </scenes>
+</document>

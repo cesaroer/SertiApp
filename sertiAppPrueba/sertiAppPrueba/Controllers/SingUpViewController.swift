@@ -90,13 +90,39 @@ class SingUpViewController: UIViewController {
             .responseJSON { (response) in
             switch response.result {
                 case .success:
-                    debugPrint(response)
-                    //print(" Respuesta a peticion POST: \(response.result)")
+                    print(" Respuesta a peticion POST: \(response.result)")
+                    //Guardamos la respuesta en una estructura ajustada a Codable
+                    //Verificamos que no haya un BadRequest
+                    let decoder = JSONDecoder()
+                    let posibleErrorResponse = try? decoder.decode(ErrorRequest.self, from: response.data!)
+                    if let errorMessaje = posibleErrorResponse!.error {
+                        self.showErrorMessage(errorMessaje)
+                    }else{
+                        //En caso de no tener error verificamos la respuesta
+                        let postResponse = try? decoder.decode(PostUsrRequest.self, from: response.data!)
+                        print(postResponse!)
+                        //Presentamos el HomeScreen
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.transitionToHome()
+                        }
+                    }
                 case .failure(let error):
                     print(error)
             }//END SC
         }//END Alamorife
     }//END sendUsrData
+    
+//MARK: Funcion de transision a HomeViewController
+    
+    func transitionToHome (){
+        
+        //Instanciamos el homeVC
+        let homeSB = UIStoryboard(name: "Home", bundle: nil)
+        let homeViewController =  homeSB.instantiateViewController(identifier: "homeVC") as? HomeViewController
+        //Hacemos el HomeVC el rootVC ahora
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+    }
     
 
 
