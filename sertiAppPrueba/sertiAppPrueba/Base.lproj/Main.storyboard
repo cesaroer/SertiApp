@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="Kt8-kK-4W1">
             <objects>
-                <viewController id="EUs-sc-9CK" customClass="ViewController" customModule="sertiAppPrueba" sceneMemberID="viewController">
+                <viewController id="EUs-sc-9CK" customClass="ViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTn-Z1-gMc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,15 +70,19 @@
                         <viewLayoutGuide key="safeArea" id="b8X-ow-EqG"/>
                     </view>
                     <navigationItem key="navigationItem" id="sms-Kg-0Ez"/>
+                    <connections>
+                        <outlet property="loginButton" destination="EDw-Fn-tUB" id="ank-ue-lyl"/>
+                        <outlet property="signupButton" destination="2t1-1w-u2R" id="jYT-GI-xUr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azF-9y-EFH" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="831.88405797101461" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Sing Up View Controller-->
         <scene sceneID="g4e-4S-HK7">
             <objects>
-                <viewController id="tmh-dV-CZ3" sceneMemberID="viewController">
+                <viewController id="tmh-dV-CZ3" customClass="SingUpViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sSP-In-QJu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,6 +144,14 @@
                         <viewLayoutGuide key="safeArea" id="SSv-zu-CtQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="LFi-n6-b3u"/>
+                    <connections>
+                        <outlet property="apellidoTextField" destination="rOf-OU-K8l" id="IJu-5c-Tlq"/>
+                        <outlet property="emailTextField" destination="aMH-Ha-cE4" id="p8c-xb-q5b"/>
+                        <outlet property="errorLabel" destination="Twh-Hm-OPH" id="Oxw-yW-4g4"/>
+                        <outlet property="nameTextField" destination="zbX-SZ-F8B" id="nuT-ym-VXQ"/>
+                        <outlet property="passwordTextField" destination="wYV-XB-6wQ" id="a0o-m2-mEI"/>
+                        <outlet property="signUpButton" destination="etb-wl-L4L" id="bk7-47-gQ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZmZ-lI-kb1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

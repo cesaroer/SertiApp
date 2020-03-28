@@ -15,6 +15,9 @@
 		DBEE0FDB242ED91E00574B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEE0FD9242ED91E00574B65 /* LaunchScreen.storyboard */; };
 		DBEE0FE6242ED91F00574B65 /* sertiAppPruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FE5242ED91F00574B65 /* sertiAppPruebaTests.swift */; };
 		DBEE0FF1242ED91F00574B65 /* sertiAppPruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FF0242ED91F00574B65 /* sertiAppPruebaUITests.swift */; };
+		DBEE1000242EDF6000574B65 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FFF242EDF6000574B65 /* Styles.swift */; };
+		DBEE1002242EDF8C00574B65 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1001242EDF8C00574B65 /* Colors.swift */; };
+		DBEE1005242EE07400574B65 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1004242EE07400574B65 /* SingUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		DBEE0FEC242ED91F00574B65 /* sertiAppPruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sertiAppPruebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEE0FF0242ED91F00574B65 /* sertiAppPruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sertiAppPruebaUITests.swift; sourceTree = "<group>"; };
 		DBEE0FF2242ED91F00574B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEE0FFF242EDF6000574B65 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		DBEE1001242EDF8C00574B65 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DBEE1004242EE07400574B65 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,10 @@
 		DBEE0FCD242ED91900574B65 /* sertiAppPrueba */ = {
 			isa = PBXGroup;
 			children = (
+				DBEE1003242EDFBB00574B65 /* Controllers */,
+				DBEE0FFE242EDF4300574B65 /* Helpers */,
 				DBEE0FCE242ED91900574B65 /* AppDelegate.swift */,
 				DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */,
-				DBEE0FD2242ED91900574B65 /* ViewController.swift */,
 				DBEE0FD4242ED91900574B65 /* Main.storyboard */,
 				DBEE0FD7242ED91E00574B65 /* Assets.xcassets */,
 				DBEE0FD9242ED91E00574B65 /* LaunchScreen.storyboard */,
@@ -126,6 +133,24 @@
 				DBEE0FF2242ED91F00574B65 /* Info.plist */,
 			);
 			path = sertiAppPruebaUITests;
+			sourceTree = "<group>";
+		};
+		DBEE0FFE242EDF4300574B65 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE0FFF242EDF6000574B65 /* Styles.swift */,
+				DBEE1001242EDF8C00574B65 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DBEE1003242EDFBB00574B65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE0FD2242ED91900574B65 /* ViewController.swift */,
+				DBEE1004242EE07400574B65 /* SingUpViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBEE0FD3242ED91900574B65 /* ViewController.swift in Sources */,
+				DBEE1002242EDF8C00574B65 /* Colors.swift in Sources */,
 				DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */,
 				DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */,
+				DBEE1005242EE07400574B65 /* SingUpViewController.swift in Sources */,
+				DBEE1000242EDF6000574B65 /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
