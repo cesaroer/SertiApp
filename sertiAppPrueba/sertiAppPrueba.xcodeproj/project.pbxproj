@@ -14,6 +14,7 @@
 		DBA5DB01242FBAEA00AA6AA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB00242FBAEA00AA6AA1 /* HomeViewController.swift */; };
 		DBA5DB03242FBE9100AA6AA1 /* KeyBoardDissmis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB02242FBE9100AA6AA1 /* KeyBoardDissmis.swift */; };
 		DBA5DB05242FC06900AA6AA1 /* ValidateFuncions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB04242FC06900AA6AA1 /* ValidateFuncions.swift */; };
+		DBA5DB07242FD7FE00AA6AA1 /* PublicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */; };
 		DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FCE242ED91900574B65 /* AppDelegate.swift */; };
 		DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */; };
 		DBEE0FD3242ED91900574B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD2242ED91900574B65 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		DBA5DB00242FBAEA00AA6AA1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DBA5DB02242FBE9100AA6AA1 /* KeyBoardDissmis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardDissmis.swift; sourceTree = "<group>"; };
 		DBA5DB04242FC06900AA6AA1 /* ValidateFuncions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFuncions.swift; sourceTree = "<group>"; };
+		DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicFunctions.swift; sourceTree = "<group>"; };
 		DBEE0FCB242ED91900574B65 /* sertiAppPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sertiAppPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEE0FCE242ED91900574B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				DBEE1001242EDF8C00574B65 /* Colors.swift */,
 				DBA5DB02242FBE9100AA6AA1 /* KeyBoardDissmis.swift */,
 				DBA5DB04242FC06900AA6AA1 /* ValidateFuncions.swift */,
+				DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */,
 				DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */,
 				DBA5DB05242FC06900AA6AA1 /* ValidateFuncions.swift in Sources */,
+				DBA5DB07242FD7FE00AA6AA1 /* PublicFunctions.swift in Sources */,
 				DBA5DAFB242FB4C600AA6AA1 /* RegisterModel.swift in Sources */,
 				DBA5DB01242FBAEA00AA6AA1 /* HomeViewController.swift in Sources */,
 				DBEE1007242EE2D500574B65 /* LoginViewControllerViewController.swift in Sources */,

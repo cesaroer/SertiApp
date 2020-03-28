@@ -95,7 +95,7 @@ class SingUpViewController: UIViewController {
         errorLabel.alpha = 1
     }
     
-//Funcionpara mandar el registro del usuario a la API
+//MARK: Funcionpara mandar el registro del usuario a la API
     
     func sendUsrData(email: String, pass: String) {
         
@@ -125,7 +125,7 @@ class SingUpViewController: UIViewController {
                         self.showSuccesMessage("Registro Exítoso")
                         //Presentamos el HomeScreen
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-                            self.transitionToHome()
+                            transitionToHome(contview: self.view)
                         }
                     }
                 case .failure(let error):
@@ -134,17 +134,6 @@ class SingUpViewController: UIViewController {
         }//END Alamorife
     }//END sendUsrData
     
-//MARK: Funcion de transision a HomeViewController
-    
-    func transitionToHome (){
-        
-        //Instanciamos el homeVC
-        let homeSB = UIStoryboard(name: "Home", bundle: nil)
-        let homeViewController =  homeSB.instantiateViewController(identifier: "homeVC") as? HomeViewController
-        //Hacemos el HomeVC el rootVC ahora
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
-    }
     
 //MARK: Funcion de autocompletado de usuario
     
