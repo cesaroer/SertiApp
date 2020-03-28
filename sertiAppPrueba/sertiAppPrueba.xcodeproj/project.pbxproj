@@ -15,6 +15,7 @@
 		DBA5DB03242FBE9100AA6AA1 /* KeyBoardDissmis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB02242FBE9100AA6AA1 /* KeyBoardDissmis.swift */; };
 		DBA5DB05242FC06900AA6AA1 /* ValidateFuncions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB04242FC06900AA6AA1 /* ValidateFuncions.swift */; };
 		DBA5DB07242FD7FE00AA6AA1 /* PublicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */; };
+		DBA5DB09242FE28800AA6AA1 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */; };
 		DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FCE242ED91900574B65 /* AppDelegate.swift */; };
 		DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */; };
 		DBEE0FD3242ED91900574B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD2242ED91900574B65 /* ViewController.swift */; };
@@ -26,7 +27,7 @@
 		DBEE1000242EDF6000574B65 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FFF242EDF6000574B65 /* Styles.swift */; };
 		DBEE1002242EDF8C00574B65 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1001242EDF8C00574B65 /* Colors.swift */; };
 		DBEE1005242EE07400574B65 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1004242EE07400574B65 /* SingUpViewController.swift */; };
-		DBEE1007242EE2D500574B65 /* LoginViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1006242EE2D500574B65 /* LoginViewControllerViewController.swift */; };
+		DBEE1007242EE2D500574B65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1006242EE2D500574B65 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DBA5DB02242FBE9100AA6AA1 /* KeyBoardDissmis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardDissmis.swift; sourceTree = "<group>"; };
 		DBA5DB04242FC06900AA6AA1 /* ValidateFuncions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFuncions.swift; sourceTree = "<group>"; };
 		DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicFunctions.swift; sourceTree = "<group>"; };
+		DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		DBEE0FCB242ED91900574B65 /* sertiAppPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sertiAppPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEE0FCE242ED91900574B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		DBEE0FFF242EDF6000574B65 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		DBEE1001242EDF8C00574B65 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DBEE1004242EE07400574B65 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
-		DBEE1006242EE2D500574B65 /* LoginViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerViewController.swift; sourceTree = "<group>"; };
+		DBEE1006242EE2D500574B65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				DBA5DAFA242FB4C600AA6AA1 /* RegisterModel.swift */,
 				DBA5DAFC242FB5FD00AA6AA1 /* ErrorModel.swift */,
+				DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,7 +184,7 @@
 			children = (
 				DBEE0FD2242ED91900574B65 /* ViewController.swift */,
 				DBEE1004242EE07400574B65 /* SingUpViewController.swift */,
-				DBEE1006242EE2D500574B65 /* LoginViewControllerViewController.swift */,
+				DBEE1006242EE2D500574B65 /* LoginViewController.swift */,
 				DBA5DB00242FBAEA00AA6AA1 /* HomeViewController.swift */,
 			);
 			path = Controllers;
@@ -331,9 +334,10 @@
 				DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */,
 				DBA5DB05242FC06900AA6AA1 /* ValidateFuncions.swift in Sources */,
 				DBA5DB07242FD7FE00AA6AA1 /* PublicFunctions.swift in Sources */,
+				DBA5DB09242FE28800AA6AA1 /* UsersModel.swift in Sources */,
 				DBA5DAFB242FB4C600AA6AA1 /* RegisterModel.swift in Sources */,
 				DBA5DB01242FBAEA00AA6AA1 /* HomeViewController.swift in Sources */,
-				DBEE1007242EE2D500574B65 /* LoginViewControllerViewController.swift in Sources */,
+				DBEE1007242EE2D500574B65 /* LoginViewController.swift in Sources */,
 				DBA5DAFD242FB5FD00AA6AA1 /* ErrorModel.swift in Sources */,
 				DBEE1005242EE07400574B65 /* SingUpViewController.swift in Sources */,
 				DBA5DB03242FBE9100AA6AA1 /* KeyBoardDissmis.swift in Sources */,

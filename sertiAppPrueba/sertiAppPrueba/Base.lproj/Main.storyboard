@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="1531.8840579710145" y="-101.11607142857143"/>
         </scene>
-        <!--Login View Controller View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ISI-PY-ufU">
             <objects>
-                <viewController id="qXo-Ax-HFS" customClass="LoginViewControllerViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="qXo-Ax-HFS" customClass="LoginViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TWD-gY-BjN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
