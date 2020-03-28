@@ -108,7 +108,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wYV-XB-6wQ">
                                         <rect key="frame" x="0.0" y="210" width="334" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etb-wl-L4L">
                                         <rect key="frame" x="0.0" y="280" width="334" height="50"/>
@@ -147,13 +147,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erC-Hd-9qV">
+                                <rect key="frame" x="324" y="727" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ux0-6X-n7y"/>
+                                    <constraint firstAttribute="width" constant="50" id="ySz-3C-Ew8"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="autocompleteBtnTapped:" destination="tmh-dV-CZ3" eventType="touchUpInside" id="eBq-wd-OWT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For AutoComplete the info to test the app press the next Button" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5t-Yk-DlF">
+                                <rect key="frame" x="59" y="719" width="257" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="6lq-OP-FAa"/>
+                                    <constraint firstAttribute="height" constant="66" id="cpi-As-Htg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SSv-zu-CtQ" firstAttribute="trailing" secondItem="erC-Hd-9qV" secondAttribute="trailing" constant="40" id="2N9-O6-t4C"/>
+                            <constraint firstItem="i5t-Yk-DlF" firstAttribute="leading" secondItem="SSv-zu-CtQ" secondAttribute="leading" constant="59" id="CDH-hA-XGq"/>
                             <constraint firstItem="50h-64-DAF" firstAttribute="top" secondItem="SSv-zu-CtQ" secondAttribute="top" constant="40" id="DCg-1E-NvW"/>
                             <constraint firstItem="kdo-CZ-Ueb" firstAttribute="top" secondItem="SSv-zu-CtQ" secondAttribute="top" constant="100" id="HIO-1P-glv"/>
                             <constraint firstItem="SSv-zu-CtQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="50h-64-DAF" secondAttribute="trailing" symbolic="YES" id="MvI-i9-Ga7"/>
                             <constraint firstItem="SSv-zu-CtQ" firstAttribute="trailing" secondItem="kdo-CZ-Ueb" secondAttribute="trailing" constant="40" id="P4S-fU-Efq"/>
+                            <constraint firstItem="erC-Hd-9qV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5t-Yk-DlF" secondAttribute="trailing" constant="8" symbolic="YES" id="XMV-i7-2EO"/>
+                            <constraint firstItem="SSv-zu-CtQ" firstAttribute="bottom" secondItem="erC-Hd-9qV" secondAttribute="bottom" constant="31" id="aqd-c0-x8m"/>
+                            <constraint firstItem="erC-Hd-9qV" firstAttribute="top" relation="lessThanOrEqual" secondItem="Twh-Hm-OPH" secondAttribute="bottom" constant="212" id="bLQ-FM-OB2"/>
+                            <constraint firstItem="i5t-Yk-DlF" firstAttribute="centerY" secondItem="erC-Hd-9qV" secondAttribute="centerY" id="q1C-Sb-7ka"/>
                             <constraint firstItem="kdo-CZ-Ueb" firstAttribute="leading" secondItem="SSv-zu-CtQ" secondAttribute="leading" constant="40" id="vi0-l9-VHf"/>
                             <constraint firstItem="50h-64-DAF" firstAttribute="leading" secondItem="SSv-zu-CtQ" secondAttribute="leading" constant="40" id="yEo-PM-g4R"/>
                         </constraints>
@@ -265,5 +299,6 @@
     </scenes>
     <resources>
         <image name="logo-serti" width="225" height="92"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>

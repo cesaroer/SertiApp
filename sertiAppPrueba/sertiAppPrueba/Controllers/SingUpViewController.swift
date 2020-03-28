@@ -43,12 +43,19 @@ class SingUpViewController: UIViewController {
             //Verificar si la contraseña es segura
             //*Usamos trimmingCharacters(in: .whitespacesAndNewlines) para limpiar de espacios y saltos de linea la contraseña del usuario*
             let cleanPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            if Styles.isPasswordValid(cleanPassword) == false {
+        if  isPasswordValid(cleanPassword) == false {
                 //La contraseña no es suficientemente segura
                 return "introduce una contraseña con: al menos 8 caracteres ,un caracter especial y un numero"
             }
             return nil
     }
+    
+//MARK: Buttuns Actions
+    
+    @IBAction func autocompleteBtnTapped(_ sender: Any) {
+        autocompleteUsrInfo()
+    }
+    
     
     @IBAction func signUpBtnTapped(_ sender: Any) {
         let error = validarCampos()
@@ -77,7 +84,15 @@ class SingUpViewController: UIViewController {
 //Función que muestra el label con un mensaje de error
     func showErrorMessage(_ message: String){
             errorLabel.text = message
+            errorLabel.textColor = .red
             errorLabel.alpha = 1
+    }
+    
+//Funcion para mostrar mensaje exítoso
+    func showSuccesMessage(_ message: String){
+        errorLabel.text = message
+        errorLabel.textColor = .green
+        errorLabel.alpha = 1
     }
     
 //Funcionpara mandar el registro del usuario a la API
@@ -107,9 +122,10 @@ class SingUpViewController: UIViewController {
                         //En caso de no tener error verificamos la respuesta
                         let postResponse = try? decoder.decode(PostUsrRequest.self, from: response.data!)
                         print(postResponse!)
+                        self.showSuccesMessage("Registro Exítoso")
                         //Presentamos el HomeScreen
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        self.transitionToHome()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                            self.transitionToHome()
                         }
                     }
                 case .failure(let error):
@@ -128,6 +144,15 @@ class SingUpViewController: UIViewController {
         //Hacemos el HomeVC el rootVC ahora
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
+    }
+    
+//MARK: Funcion de autocompletado de usuario
+    
+    func autocompleteUsrInfo(){
+        nameTextField.text = "George"
+        apellidoTextField.text = "Bluth"
+        emailTextField.text = "george.bluth@reqres.in"
+        passwordTextField.text = "Asdfghi1*"
     }
     
 
