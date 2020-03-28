@@ -18,6 +18,7 @@
 		DBEE1000242EDF6000574B65 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FFF242EDF6000574B65 /* Styles.swift */; };
 		DBEE1002242EDF8C00574B65 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1001242EDF8C00574B65 /* Colors.swift */; };
 		DBEE1005242EE07400574B65 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1004242EE07400574B65 /* SingUpViewController.swift */; };
+		DBEE1007242EE2D500574B65 /* LoginViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE1006242EE2D500574B65 /* LoginViewControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DBEE0FFF242EDF6000574B65 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		DBEE1001242EDF8C00574B65 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DBEE1004242EE07400574B65 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		DBEE1006242EE2D500574B65 /* LoginViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			children = (
 				DBEE0FD2242ED91900574B65 /* ViewController.swift */,
 				DBEE1004242EE07400574B65 /* SingUpViewController.swift */,
+				DBEE1006242EE2D500574B65 /* LoginViewControllerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				DBEE1002242EDF8C00574B65 /* Colors.swift in Sources */,
 				DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */,
 				DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */,
+				DBEE1007242EE2D500574B65 /* LoginViewControllerViewController.swift in Sources */,
 				DBEE1005242EE07400574B65 /* SingUpViewController.swift in Sources */,
 				DBEE1000242EDF6000574B65 /* Styles.swift in Sources */,
 			);

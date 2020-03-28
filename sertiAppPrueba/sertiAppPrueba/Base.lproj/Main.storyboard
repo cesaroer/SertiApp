@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kdo-CZ-Ueb">
-                                <rect key="frame" x="40" y="40" width="334" height="415"/>
+                                <rect key="frame" x="40" y="100" width="334" height="415"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre (s)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbX-SZ-F8B">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -134,12 +134,25 @@
                                     <constraint firstItem="aMH-Ha-cE4" firstAttribute="height" secondItem="zbX-SZ-F8B" secondAttribute="height" id="oII-1B-vcZ"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50h-64-DAF">
+                                <rect key="frame" x="40" y="40" width="134" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="Rwc-0S-rGU"/>
+                                    <constraint firstAttribute="height" constant="48" id="qYS-63-mvU"/>
+                                    <constraint firstAttribute="width" constant="134" id="t7N-hR-nhu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kdo-CZ-Ueb" firstAttribute="top" secondItem="SSv-zu-CtQ" secondAttribute="top" constant="40" id="HIO-1P-glv"/>
+                            <constraint firstItem="50h-64-DAF" firstAttribute="top" secondItem="SSv-zu-CtQ" secondAttribute="top" constant="40" id="DCg-1E-NvW"/>
+                            <constraint firstItem="kdo-CZ-Ueb" firstAttribute="top" secondItem="SSv-zu-CtQ" secondAttribute="top" constant="100" id="HIO-1P-glv"/>
                             <constraint firstItem="SSv-zu-CtQ" firstAttribute="trailing" secondItem="kdo-CZ-Ueb" secondAttribute="trailing" constant="40" id="P4S-fU-Efq"/>
                             <constraint firstItem="kdo-CZ-Ueb" firstAttribute="leading" secondItem="SSv-zu-CtQ" secondAttribute="leading" constant="40" id="vi0-l9-VHf"/>
+                            <constraint firstItem="50h-64-DAF" firstAttribute="leading" secondItem="SSv-zu-CtQ" secondAttribute="leading" constant="40" id="yEo-PM-g4R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SSv-zu-CtQ"/>
                     </view>
@@ -157,16 +170,16 @@
             </objects>
             <point key="canvasLocation" x="1531.8840579710145" y="-101.11607142857143"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller View Controller-->
         <scene sceneID="ISI-PY-ufU">
             <objects>
-                <viewController id="qXo-Ax-HFS" sceneMemberID="viewController">
+                <viewController id="qXo-Ax-HFS" customClass="LoginViewControllerViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TWD-gY-BjN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O0Z-od-hiO">
-                                <rect key="frame" x="40" y="80" width="334" height="230.5"/>
+                                <rect key="frame" x="40" y="100" width="334" height="230.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5e-C9-UO0">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -197,15 +210,33 @@
                                     <constraint firstItem="MMI-Bs-a6B" firstAttribute="height" secondItem="E5e-C9-UO0" secondAttribute="height" id="arj-hB-weY"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp2-Bb-kB2">
+                                <rect key="frame" x="40" y="36" width="95" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="amn-ob-dkj"/>
+                                    <constraint firstAttribute="height" constant="48" id="bZk-9v-t5F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Rp2-Bb-kB2" firstAttribute="top" secondItem="Qlr-VO-zeT" secondAttribute="top" constant="36" id="GzD-RG-bMG"/>
                             <constraint firstItem="O0Z-od-hiO" firstAttribute="leading" secondItem="Qlr-VO-zeT" secondAttribute="leading" constant="40" id="TJD-Bl-PvE"/>
-                            <constraint firstItem="O0Z-od-hiO" firstAttribute="top" secondItem="Qlr-VO-zeT" secondAttribute="top" constant="80" id="fXW-BO-Bt5"/>
+                            <constraint firstItem="Rp2-Bb-kB2" firstAttribute="leading" secondItem="Qlr-VO-zeT" secondAttribute="leading" constant="40" id="YUV-ck-hWV"/>
+                            <constraint firstItem="O0Z-od-hiO" firstAttribute="top" secondItem="Qlr-VO-zeT" secondAttribute="top" constant="100" id="fXW-BO-Bt5"/>
                             <constraint firstItem="Qlr-VO-zeT" firstAttribute="trailing" secondItem="O0Z-od-hiO" secondAttribute="trailing" constant="40" id="yfs-RE-8xj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qlr-VO-zeT"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="E5e-C9-UO0" id="fnl-d1-aj8"/>
+                        <outlet property="errorLabel" destination="EMK-J0-N9f" id="CGP-4I-Xag"/>
+                        <outlet property="loginButton" destination="gGU-S9-mh5" id="0Gm-Hv-wdX"/>
+                        <outlet property="passwordTextField" destination="MMI-Bs-a6B" id="ogB-aC-foL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yW5-iW-wRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
