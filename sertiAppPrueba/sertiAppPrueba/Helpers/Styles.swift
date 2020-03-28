@@ -34,7 +34,7 @@ class Styles {
     
     static func styleFilledButton(_ button:UIButton) {
         
-        // Filled rounded corner style
+        // Esquinas redondeada con color verde
         button.backgroundColor = UIColor.myGreen
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.white
@@ -42,23 +42,13 @@ class Styles {
     
     static func styleHollowButton(_ button:UIButton) {
         
-        // Hollow rounded corner style
+        // Controno en el boton con equinas redondeadas
         button.layer.borderWidth = 2
         button.layer.borderColor = UIColor.myBlue.cgColor
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.myBlue
     }
     
-    
-    //Funcion que valida la contraseña
-    static func isPasswordValid(_ password : String) -> Bool {
-        
-        //Expresion regular con la que validaremos el formato de la contraseña
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
-        
-        
-        return passwordTest.evaluate(with: password)
-    }
     
 }
 
