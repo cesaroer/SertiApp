@@ -146,10 +146,9 @@ class SingUpViewController: UIViewController {
     }
     
     
-//MARK: Funcion de transision a HomeViewController
+//MARK: Funcion de transision a LoginViewController
 
 public func transitionToLogin(){
-    
     
     //Instanciamos el homeVC
     let mainSB = UIStoryboard(name: "Main", bundle: nil)
