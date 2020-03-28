@@ -22,7 +22,9 @@ class SingUpViewController: UIViewController {
         super.viewDidLoad()
 
         setupElements()
-        sendUsrData(email: "lindsay.ferguson@reqres.in", pass: "asdfg")
+        //Funcion para ocultar el Teclado tocando en cualquier parte
+        self.hideKeyboard()
+        //sendUsrData(email: "lindsay.ferguson@reqres.in", pass: "asdfg")
 
     }
 
@@ -53,7 +55,11 @@ class SingUpViewController: UIViewController {
         if error != nil{
             //Hubo un error en algun campo entonces mostramos mensaje de error
             showErrorMessage(error!)
+        }else{
+            sendUsrData(email: emailTextField.text!, pass: passwordTextField.text!)
         }
+        
+        
     }
     
     func setupElements(){
