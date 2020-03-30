@@ -28,6 +28,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
+//MARK: Actions Buttons
+    
+    @IBAction func menuBtnTapped(_ sender: Any) {
+        guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "menuVc") as? MenuViewController else {return}
+        present(menuVC, animated: true)
+        
+    }
+    
+    
 //MARK: Funciones getUser
     
     func getUsrList() {
@@ -91,7 +100,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.usrEmailLbl.text = usrsData![indexPath.row].email!
         cell.usrNameLbl.text = usrsData![indexPath.row].firstName!
         cell.usrApLbl.text = usrsData![indexPath.row].lastName!
-        //Se 
+        //Se Asigna la imagen al imageView y se le da diseño redondeado
         cell.usrAvatarImageView.image = usrsAvatar[indexPath.row]
         cell.usrAvatarImageView?.layer.masksToBounds = true
         cell.usrAvatarImageView?.layer.cornerRadius = cell.usrAvatarImageView.frame.width / 2
@@ -101,11 +110,5 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-
-    
-    
-    
-
-
 
 }

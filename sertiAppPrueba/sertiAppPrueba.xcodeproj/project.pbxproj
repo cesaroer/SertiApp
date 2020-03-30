@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB93E65F2431C05D0089AC9F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93E65E2431C05D0089AC9F /* MenuViewController.swift */; };
 		DBA5DAF8242FAB9F00AA6AA1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBA5DAF7242FAB9F00AA6AA1 /* Alamofire */; };
 		DBA5DAFB242FB4C600AA6AA1 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DAFA242FB4C600AA6AA1 /* RegisterModel.swift */; };
 		DBA5DAFD242FB5FD00AA6AA1 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DAFC242FB5FD00AA6AA1 /* ErrorModel.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB93E65E2431C05D0089AC9F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DBA5DAFA242FB4C600AA6AA1 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		DBA5DAFC242FB5FD00AA6AA1 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		DBA5DAFE242FB9F000AA6AA1 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				DBA5DB00242FBAEA00AA6AA1 /* HomeViewController.swift */,
 				DBA5DB0D242FE77600AA6AA1 /* UserTableViewCell.swift */,
+				DB93E65E2431C05D0089AC9F /* MenuViewController.swift */,
 			);
 			path = HomeControlles;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				DBA5DB0E242FE77600AA6AA1 /* UserTableViewCell.swift in Sources */,
 				DBA5DB05242FC06900AA6AA1 /* ValidateFuncions.swift in Sources */,
 				DBA5DB07242FD7FE00AA6AA1 /* PublicFunctions.swift in Sources */,
+				DB93E65F2431C05D0089AC9F /* MenuViewController.swift in Sources */,
 				DBA5DB09242FE28800AA6AA1 /* UsersModel.swift in Sources */,
 				DBA5DAFB242FB4C600AA6AA1 /* RegisterModel.swift in Sources */,
 				DBA5DB01242FBAEA00AA6AA1 /* HomeViewController.swift in Sources */,
