@@ -13,11 +13,15 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var usrEmailLbl: UILabel!
     @IBOutlet weak var usrApLbl: UILabel!
     @IBOutlet weak var usrNameLbl: UILabel!
-    @IBOutlet weak var usrAvatarImageView: UIImageView!
+    @IBOutlet var usrAvatarImageView: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
