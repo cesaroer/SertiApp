@@ -93,10 +93,11 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="gh.png" translatesAutoresizingMaskIntoConstraints="NO" id="7R3-G4-2au">
-                                                    <rect key="frame" x="254" y="22" width="110" height="110"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7R3-G4-2au">
+                                                    <rect key="frame" x="254" y="22" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.12941176469999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.039215686270000001" green="0.23921568630000001" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -254,5 +255,6 @@
     </scenes>
     <resources>
         <image name="gh.png" width="32" height="32"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

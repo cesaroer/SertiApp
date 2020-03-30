@@ -27,7 +27,7 @@ struct GetUsers: Codable {
 struct DatUsr: Codable {
     let id: Int?
     let email, firstName, lastName: String?
-    let avatar: URL?
+    let avatar: String?
 
     enum CodingKeys: String, CodingKey {
         case id, email

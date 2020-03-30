@@ -16,6 +16,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var rows = 0
     //Estructura en la cual guardaremos los detalles de los usuarios
     var usrsData : [DatUsr]?
+    var usrsAvatar: [UIImage] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +47,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         self.rows = usrData.data!.count
                         //Guardamos en nuestra variable global la respuesta
                         self.usrsData = usrData.data!
+                        
+                        //Si hay imagen para el usuario guardamos la imagen en un arreglo local para evitar pedir la imagen al servidor cada vez que se tenga que desplegar.
+                        for i in 0..<self.rows{
+                            let imageUsrURL = URL(string: self.usrsData![i].avatar!)
+                            print("Esta es la url: para \(i) : \(imageUsrURL!)")
+                            if let imageUsrsData = try? Data(contentsOf: imageUsrURL!){
+                                print("__Se  supone que si hay Data___")
+                                if let imageUsr = UIImage(data: imageUsrsData){
+                                    print("__Se  supone que si hay Imagen___")
+                                    self.usrsAvatar.append(imageUsr)
+                                }else{
+                                    print("Entramos al else___NOOOOO")
+                                    self.usrsAvatar.append(UIImage(named: "logo-serti")!)
+                                }
+                            }
+                        }
                     }
                     //Recargamos la información en la tabla para poder visualizar los datos
                     self.usrTableView.reloadData()
-                    
                     
                 case .failure(let error):
                     print(error)
@@ -75,9 +91,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.usrEmailLbl.text = usrsData![indexPath.row].email!
         cell.usrNameLbl.text = usrsData![indexPath.row].firstName!
         cell.usrApLbl.text = usrsData![indexPath.row].lastName!
-
-
+        //Se 
+        cell.usrAvatarImageView.image = usrsAvatar[indexPath.row]
+        cell.usrAvatarImageView?.layer.masksToBounds = true
+        cell.usrAvatarImageView?.layer.cornerRadius = cell.usrAvatarImageView.frame.width / 2
         
+        
+
         return cell
     }
     
