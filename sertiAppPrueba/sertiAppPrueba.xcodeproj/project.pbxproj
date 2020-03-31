@@ -18,6 +18,7 @@
 		DBA5DB07242FD7FE00AA6AA1 /* PublicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */; };
 		DBA5DB09242FE28800AA6AA1 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */; };
 		DBA5DB0E242FE77600AA6AA1 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB0D242FE77600AA6AA1 /* UserTableViewCell.swift */; };
+		DBADBF502432F43400BCABBB /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */; };
 		DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FCE242ED91900574B65 /* AppDelegate.swift */; };
 		DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */; };
 		DBEE0FD3242ED91900574B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD2242ED91900574B65 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicFunctions.swift; sourceTree = "<group>"; };
 		DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		DBA5DB0D242FE77600AA6AA1 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		DBEE0FCB242ED91900574B65 /* sertiAppPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sertiAppPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEE0FCE242ED91900574B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				DBEE0FD7242ED91E00574B65 /* Assets.xcassets */,
 				DBEE0FD9242ED91E00574B65 /* LaunchScreen.storyboard */,
 				DBEE0FDC242ED91E00574B65 /* Info.plist */,
+				DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */,
 			);
 			path = sertiAppPrueba;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			files = (
 				DBEE0FD3242ED91900574B65 /* ViewController.swift in Sources */,
 				DBEE1002242EDF8C00574B65 /* Colors.swift in Sources */,
+				DBADBF502432F43400BCABBB /* SlideInTransition.swift in Sources */,
 				DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */,
 				DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */,
 				DBA5DB0E242FE77600AA6AA1 /* UserTableViewCell.swift in Sources */,

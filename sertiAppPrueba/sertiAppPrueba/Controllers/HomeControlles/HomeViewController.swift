@@ -17,6 +17,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //Estructura en la cual guardaremos los detalles de los usuarios
     var usrsData : [DatUsr]?
     var usrsAvatar: [UIImage] = []
+    
+    let transition = SlideInTransition()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func menuBtnTapped(_ sender: Any) {
         guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "menuVc") as? MenuViewController else {return}
+        menuVC.modalPresentationStyle = .overCurrentContext
+        menuVC.transitioningDelegate = self
+        
         present(menuVC, animated: true)
+        
         
     }
     
@@ -105,10 +111,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.usrAvatarImageView?.layer.masksToBounds = true
         cell.usrAvatarImageView?.layer.cornerRadius = cell.usrAvatarImageView.frame.width / 2
         
-        
 
         return cell
     }
-    
+}
 
+extension HomeViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+    }
 }
