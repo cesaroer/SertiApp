@@ -11,10 +11,11 @@ import UIKit
 class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
     //Añadimos una bandera
     var isPresenting = false
+    let dimmingView = UIView()
     
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 3.0
+        return 0.3
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -27,6 +28,12 @@ class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
         let finalHeight = fromViewController.view.bounds.height
         
         if isPresenting{
+            //Añadimos el dimming View
+            dimmingView.backgroundColor = .black
+            dimmingView.alpha = 0.0
+            containerView.addSubview(dimmingView)
+            dimmingView.frame = containerView.bounds
+            
             //Añadimos la vista Menu a la viewContainer
             containerView.addSubview(toViewController.view)
             
@@ -37,11 +44,14 @@ class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
         
         //Animacion de presentacion en la pantalla
         let tranform = {
+            
+            self.dimmingView.alpha = 0.5
             toViewController.view.transform = CGAffineTransform(translationX: finalWidth, y: 0)
         }
         
         //Animacion de regreso en dissmis
         let identity = {
+            self.dimmingView.alpha = 0.0
             fromViewController.view.transform = .identity
         }
         

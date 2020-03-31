@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="Kt8-kK-4W1">
             <objects>
-                <viewController id="EUs-sc-9CK" customClass="ViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inicialVC" id="EUs-sc-9CK" customClass="ViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTn-Z1-gMc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

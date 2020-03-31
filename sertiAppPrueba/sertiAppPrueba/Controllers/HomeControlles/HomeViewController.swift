@@ -34,12 +34,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func menuBtnTapped(_ sender: Any) {
         guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "menuVc") as? MenuViewController else {return}
+        menuVC.didTapMenuType = { menuType in
+            self.loggout(menuType)
+        }
         menuVC.modalPresentationStyle = .overCurrentContext
         menuVC.transitioningDelegate = self
         
         present(menuVC, animated: true)
         
-        
+    }
+    
+//MARK: Funcion de transicion a Vista inicial para Loggout
+    func loggout(_ menuType: MenuType) {
+        switch menuType {
+            case .logout:
+                transitionToMain(contview: view)
+            default:
+                print("No hay esta opcion")
+        }
     }
     
     

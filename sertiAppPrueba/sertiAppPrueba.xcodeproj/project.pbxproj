@@ -171,7 +171,6 @@
 				DBEE0FD7242ED91E00574B65 /* Assets.xcassets */,
 				DBEE0FD9242ED91E00574B65 /* LaunchScreen.storyboard */,
 				DBEE0FDC242ED91E00574B65 /* Info.plist */,
-				DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */,
 			);
 			path = sertiAppPrueba;
 			sourceTree = "<group>";
@@ -199,6 +198,7 @@
 			children = (
 				DBEE0FFF242EDF6000574B65 /* Styles.swift */,
 				DBEE1001242EDF8C00574B65 /* Colors.swift */,
+				DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */,
 				DBA5DB02242FBE9100AA6AA1 /* KeyBoardDissmis.swift */,
 				DBA5DB04242FC06900AA6AA1 /* ValidateFuncions.swift */,
 				DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */,
