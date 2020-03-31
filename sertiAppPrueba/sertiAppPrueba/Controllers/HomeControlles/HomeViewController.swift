@@ -49,6 +49,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         switch menuType {
             case .logout:
                 transitionToMain(contview: view)
+            case .profile:
+                performSegue(withIdentifier: "profileSegue", sender: AnyObject.self)
             default:
                 print("No hay esta opcion")
         }

@@ -165,6 +165,7 @@
 				DBEE1003242EDFBB00574B65 /* Controllers */,
 				DBEE0FFE242EDF4300574B65 /* Helpers */,
 				DBEE0FCE242ED91900574B65 /* AppDelegate.swift */,
+				DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */,
 				DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */,
 				DBA5DAFE242FB9F000AA6AA1 /* Home.storyboard */,
 				DBEE0FD4242ED91900574B65 /* Main.storyboard */,
@@ -198,7 +199,6 @@
 			children = (
 				DBEE0FFF242EDF6000574B65 /* Styles.swift */,
 				DBEE1001242EDF8C00574B65 /* Colors.swift */,
-				DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */,
 				DBA5DB02242FBE9100AA6AA1 /* KeyBoardDissmis.swift */,
 				DBA5DB04242FC06900AA6AA1 /* ValidateFuncions.swift */,
 				DBA5DB06242FD7FE00AA6AA1 /* PublicFunctions.swift */,
