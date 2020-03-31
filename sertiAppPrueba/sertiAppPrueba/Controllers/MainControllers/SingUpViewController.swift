@@ -125,7 +125,8 @@ class SingUpViewController: UIViewController {
                         self.showSuccesMessage("Registro Exítoso")
                         //Presentamos el HomeScreen
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-                            transitionToHome(contview: self.view)
+                            //transitionToHome(contview: self.view)
+                            self.transitionToLogin()
                         }
                     }
                 case .failure(let error):
@@ -143,6 +144,19 @@ class SingUpViewController: UIViewController {
         emailTextField.text = "george.bluth@reqres.in"
         passwordTextField.text = "Asdfghi1*"
     }
+    
+    
+//MARK: Funcion de transision a LoginViewController
+
+public func transitionToLogin(){
+    
+    //Instanciamos el homeVC
+    let mainSB = UIStoryboard(name: "Main", bundle: nil)
+    let loginViewController =  mainSB.instantiateViewController(identifier: "loginVC") as! LoginViewController
+    
+    //Presentamos la vista
+    self.present(loginViewController, animated: true, completion: nil)
+}
     
 
 

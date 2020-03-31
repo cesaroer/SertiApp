@@ -20,3 +20,16 @@ public func transitionToHome (contview: UIView){
     contview.window?.rootViewController = homeViewController
     contview.window?.makeKeyAndVisible()
 }
+
+//MARK: Funcion de transision a ViewInicial
+
+public func transitionToMain (contview: UIView){
+    
+    //Instanciamos el homeVC
+    let mainSB = UIStoryboard(name: "Main", bundle: nil)
+    let mainViewController =  mainSB.instantiateViewController(identifier: "inicialVC")
+    //Hacemos el HomeVC el rootVC ahora
+    contview.window?.rootViewController = mainViewController
+    contview.window?.makeKeyAndVisible()
+}
+

@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="Kt8-kK-4W1">
             <objects>
-                <viewController id="EUs-sc-9CK" customClass="ViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inicialVC" id="EUs-sc-9CK" customClass="ViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTn-Z1-gMc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="1531.8840579710145" y="-101.11607142857143"/>
         </scene>
-        <!--Login View Controller View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ISI-PY-ufU">
             <objects>
-                <viewController id="qXo-Ax-HFS" customClass="LoginViewControllerViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="qXo-Ax-HFS" customClass="LoginViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TWD-gY-BjN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,6 +296,7 @@
                             <constraint firstItem="h6k-85-cIA" firstAttribute="centerY" secondItem="k9s-bc-zMe" secondAttribute="centerY" id="9ca-fI-w4T"/>
                             <constraint firstItem="Rp2-Bb-kB2" firstAttribute="top" secondItem="Qlr-VO-zeT" secondAttribute="top" constant="36" id="GzD-RG-bMG"/>
                             <constraint firstItem="O0Z-od-hiO" firstAttribute="leading" secondItem="Qlr-VO-zeT" secondAttribute="leading" constant="40" id="TJD-Bl-PvE"/>
+                            <constraint firstItem="h6k-85-cIA" firstAttribute="leading" secondItem="Qlr-VO-zeT" secondAttribute="leading" constant="69" id="W1d-XN-qYE"/>
                             <constraint firstItem="Rp2-Bb-kB2" firstAttribute="leading" secondItem="Qlr-VO-zeT" secondAttribute="leading" constant="40" id="YUV-ck-hWV"/>
                             <constraint firstItem="k9s-bc-zMe" firstAttribute="leading" secondItem="h6k-85-cIA" secondAttribute="trailing" constant="8" id="ern-cK-hoj"/>
                             <constraint firstItem="O0Z-od-hiO" firstAttribute="top" secondItem="Qlr-VO-zeT" secondAttribute="top" constant="100" id="fXW-BO-Bt5"/>

@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LoginViewControllerViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -42,13 +42,11 @@ class LoginViewControllerViewController: UIViewController {
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         sendUsrData(email: email, pass: password)
-        
     }
     
     @IBAction func autoCompletBtnTapped(_ sender: Any) {
         autocompleteUsrInfo()
     }
-    
     
 //Función que muestra el label con un mensaje de error
     func showErrorMessage(_ message: String){
@@ -67,7 +65,6 @@ class LoginViewControllerViewController: UIViewController {
 
 //MARK: Funcionpara mandar el Login con info del usuario a la API
 
-    
     func sendUsrData(email: String, pass: String) {
            
            let urlString = "https://reqres.in/api/login"
@@ -118,15 +115,11 @@ class LoginViewControllerViewController: UIViewController {
         Styles.styleFilledButton(loginButton)
      }
     
-
-    
 //MARK: Funcion de autocompletado de usuario
     
     func autocompleteUsrInfo(){
         emailTextField.text = "george.bluth@reqres.in"
         passwordTextField.text = "Asdfghi1*"
     }
-
-
 
 }
