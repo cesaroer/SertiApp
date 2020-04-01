@@ -7,24 +7,38 @@
 //
 
 import UIKit
+import Alamofire
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet var usrImageView: UIImageView!
+    @IBOutlet var usrNameLbl: UILabel!
+    @IBOutlet var usrApellidoLbl: UILabel!
+    @IBOutlet var usrEmaillabl: UILabel!
+    @IBOutlet var companyLbl: UILabel!
+    @IBOutlet var urlCmpnyLbl: UILabel!
+    @IBOutlet var sloganLbl: UILabel!
+    @IBOutlet var usrIdLbl: UILabel!
+    
+    var usrImage : UIImage?
+    var name = ""
+    var lastName = ""
+    var email = ""
+    var usrId = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        usrImageView.image = usrImage!
+        usrNameLbl.text = name
+        usrApellidoLbl.text = lastName
+        usrEmaillabl.text = email
+        usrIdLbl.text = String(usrId)
+        
+        
+        usrImageView.layer.masksToBounds = true
+        usrImageView.layer.cornerRadius = usrImageView.frame.width / 2
+        
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

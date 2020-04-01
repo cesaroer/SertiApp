@@ -240,34 +240,37 @@
             </objects>
             <point key="canvasLocation" x="1642" y="196"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="7IB-Qf-iA5">
             <objects>
-                <viewController id="dFm-Tz-vIa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileVC" id="dFm-Tz-vIa" customClass="ProfileViewController" customModule="sertiAppPrueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="daG-zv-vFK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33S-k8-cJX">
-                                <rect key="frame" x="119" y="20" width="176" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="33S-k8-cJX">
+                                <rect key="frame" x="147" y="70" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="RfS-uo-ocu"/>
+                                    <constraint firstAttribute="width" constant="120" id="URF-Ip-94e"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEJ-yn-J4Q">
-                                <rect key="frame" x="36" y="196" width="159" height="28"/>
+                                <rect key="frame" x="36" y="196" width="38" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzV-VF-vQx">
+                                <rect key="frame" x="82" y="196" width="38" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQb-Mp-mmG">
-                                <rect key="frame" x="36" y="248" width="159" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-xZ-NLq">
-                                <rect key="frame" x="36" y="300" width="159" height="28"/>
+                                <rect key="frame" x="36" y="248" width="243" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -301,11 +304,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-xZ-NLq">
+                                <rect key="frame" x="36" y="300" width="243" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owx-GO-wb5">
+                                <rect key="frame" x="0.0" y="0.0" width="149" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6H-lx-Htp">
+                                        <rect key="frame" x="19" y="10" width="111" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="JfX-eX-csH"/>
+                                    <constraint firstAttribute="width" constant="149" id="abI-5z-hE1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="33S-k8-cJX" firstAttribute="centerX" secondItem="Gzg-8B-v9B" secondAttribute="centerX" id="TYK-u2-RRJ"/>
+                            <constraint firstItem="33S-k8-cJX" firstAttribute="top" secondItem="Gzg-8B-v9B" secondAttribute="top" constant="70" id="l9S-6l-MU7"/>
+                            <constraint firstItem="owx-GO-wb5" firstAttribute="top" secondItem="Gzg-8B-v9B" secondAttribute="top" constant="0.01" id="nsU-1D-LmJ"/>
+                            <constraint firstItem="owx-GO-wb5" firstAttribute="leading" secondItem="Gzg-8B-v9B" secondAttribute="leading" constant="0.01" id="pn9-V3-Kqy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gzg-8B-v9B"/>
                     </view>
                     <navigationItem key="navigationItem" id="8cP-Xm-tDm"/>
+                    <connections>
+                        <outlet property="companyLbl" destination="dis-S1-1DV" id="3Cw-rS-lrN"/>
+                        <outlet property="sloganLbl" destination="z38-hz-fuT" id="jtb-Ko-iGT"/>
+                        <outlet property="urlCmpnyLbl" destination="SWW-rZ-KUI" id="eiW-6a-dKE"/>
+                        <outlet property="usrApellidoLbl" destination="cBB-xZ-NLq" id="goo-hP-wC3"/>
+                        <outlet property="usrEmaillabl" destination="IOS-QH-tuC" id="HGy-bM-s9q"/>
+                        <outlet property="usrIdLbl" destination="OzV-VF-vQx" id="mEV-yB-s1K"/>
+                        <outlet property="usrImageView" destination="33S-k8-cJX" id="D7J-Ip-NYV"/>
+                        <outlet property="usrNameLbl" destination="TQb-Mp-mmG" id="6tU-vw-Msg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiU-cp-AMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

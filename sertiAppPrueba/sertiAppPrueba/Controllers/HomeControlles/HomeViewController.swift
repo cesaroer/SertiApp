@@ -17,6 +17,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //Estructura en la cual guardaremos los detalles de los usuarios
     var usrsData : [DatUsr]?
     var usrsAvatar: [UIImage] = []
+    // variable que usaremos para guardar el indexpath seleccionado
+    var iPathSelected = 0
     
     let transition = SlideInTransition()
 
@@ -128,6 +130,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //print(usrsData![indexPath.row].firstName!)
+        let storyBoardHome = UIStoryboard(name: "Home", bundle: nil)
+        let profileVC = storyBoardHome.instantiateViewController(identifier: "profileVC") as! ProfileViewController
+        DispatchQueue.main.async {
+            profileVC.name = self.usrsData![indexPath.row].firstName!
+            profileVC.lastName = self.usrsData![indexPath.row].lastName!
+            profileVC.email = self.usrsData![indexPath.row].email!
+            profileVC.usrId = self.usrsData![indexPath.row].id!
+            profileVC.usrImage = self.usrsAvatar[indexPath.row]
+            self.present(profileVC, animated: true, completion: nil)
+        }
+        
+    }
+    
+    
 }
 
 extension HomeViewController: UIViewControllerTransitioningDelegate {
