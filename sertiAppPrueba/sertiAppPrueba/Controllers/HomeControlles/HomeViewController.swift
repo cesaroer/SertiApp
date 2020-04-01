@@ -193,6 +193,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.usrAvatarImageView?.layer.cornerRadius = cell.usrAvatarImageView.frame.width / 2
         cell.usrAvatarImageView?.layer.borderWidth = 3
         cell.usrAvatarImageView?.layer.borderColor = CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 1)
+            
+        //Se añade bordes redondeados a lacelda
+            cell.layer.masksToBounds = true
+            cell.layer.cornerRadius = 30
+            
         
 
         }
@@ -211,6 +216,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             profileVC.usrId = self.usrsData![indexPath.row].id!
             profileVC.usrImage = self.usrsAvatar[indexPath.row]
             self.present(profileVC, animated: true, completion: nil)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+    //Animamos la entrada de las celdas
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 80, 0)
+        cell.layer.transform = rotationTransform
+        cell.alpha = 0.0
+        
+        UIView.animate(withDuration: 1.0) {
+            cell.layer.transform = CATransform3DIdentity
+            cell.alpha = 1.0
         }
     }
 }

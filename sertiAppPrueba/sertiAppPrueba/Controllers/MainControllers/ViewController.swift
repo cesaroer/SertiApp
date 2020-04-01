@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupElements()
-        //Si hay session del usuario guardada entonces cargamos la vista principal
+        //Si hay session del usuario guardada entonces cargamos la vista principal de lo contrario nos quedamos en la vista predeterminada
         if UserDefaults.standard.bool(forKey: "isLogin") == true{
             print("Dirigiendo a Home")
             DispatchQueue.main.asyncAfter(deadline: .now()) {

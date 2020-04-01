@@ -20,6 +20,13 @@ class UserTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        let screenSize = UIScreen.main.bounds
+        let cellSeparatorHeigth = CGFloat(20.0)
+        let addSeparator = UIView.init(frame: CGRect(x: 0, y: self.frame.size.height - cellSeparatorHeigth, width: screenSize.width, height: cellSeparatorHeigth))
+        addSeparator.backgroundColor = UIColor.white
+        addSeparator.layer.masksToBounds = true
+        addSeparator.layer.cornerRadius = 10
+        self.addSubview(addSeparator)
         
 
     }
