@@ -42,6 +42,7 @@ class LoginViewController: UIViewController {
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         sendUsrData(email: email, pass: password)
+        
     }
     
     @IBAction func autoCompletBtnTapped(_ sender: Any) {
@@ -91,6 +92,11 @@ class LoginViewController: UIViewController {
                            let postResponse = try? decoder.decode(PostUsrRequest.self, from: response.data!)
                            print(postResponse!)
                            self.showSuccesMessage("Verificado")
+                        
+                            //Guardamos el correo y contraseña en UserDEfaults
+                            UserDefaults.standard.set(email, forKey: "email")
+                            UserDefaults.standard.set(pass, forKey: "pass")
+                            UserDefaults.standard.synchronize()
                            //Presentamos el HomeScreen
                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                                 transitionToHome(contview: self.view)

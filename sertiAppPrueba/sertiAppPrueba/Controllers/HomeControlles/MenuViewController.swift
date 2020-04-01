@@ -15,10 +15,13 @@ enum MenuType: Int{
 }
 
 class MenuViewController: UITableViewController {
+    @IBOutlet weak var loggedUsrLbl: UILabel!
+    
     var didTapMenuType: ((MenuType) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loggedUsrLbl.text = UserDefaults.standard.string(forKey: "email")
 
         // Do any additional setup after loading the view.
     }

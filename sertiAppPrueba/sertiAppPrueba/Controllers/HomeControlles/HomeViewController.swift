@@ -59,6 +59,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func loggout(_ menuType: MenuType) {
         switch menuType {
             case .logout:
+                //Borramos los datos de UserDefaults
+                UserDefaults.standard.removeObject(forKey: "email")
+                UserDefaults.standard.removeObject(forKey: "pass")
                 transitionToMain(contview: view)
             case .profile:
                 performSegue(withIdentifier: "profileSegue", sender: AnyObject.self)
@@ -232,6 +235,7 @@ extension HomeViewController: UIViewControllerTransitioningDelegate, UISearchBar
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
         //Buscamos los nombres que coincidad incluso con introducir una letra
         searchingNames = self.usersNamesArray.filter({$0.prefix(searchText.count) == searchText})
         searching =  true
