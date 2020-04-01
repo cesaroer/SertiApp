@@ -20,6 +20,7 @@
 		DBA5DB09242FE28800AA6AA1 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */; };
 		DBA5DB0E242FE77600AA6AA1 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5DB0D242FE77600AA6AA1 /* UserTableViewCell.swift */; };
 		DBADBF502432F43400BCABBB /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */; };
+		DBB23FFB2434174300A02754 /* SingleUsrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB23FFA2434174300A02754 /* SingleUsrModel.swift */; };
 		DBEE0FCF242ED91900574B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FCE242ED91900574B65 /* AppDelegate.swift */; };
 		DBEE0FD1242ED91900574B65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */; };
 		DBEE0FD3242ED91900574B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE0FD2242ED91900574B65 /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 		DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		DBA5DB0D242FE77600AA6AA1 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		DBADBF4F2432F43400BCABBB /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		DBB23FFA2434174300A02754 /* SingleUsrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUsrModel.swift; sourceTree = "<group>"; };
 		DBEE0FCB242ED91900574B65 /* sertiAppPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sertiAppPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEE0FCE242ED91900574B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEE0FD0242ED91900574B65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				DBA5DAFA242FB4C600AA6AA1 /* RegisterModel.swift */,
 				DBA5DAFC242FB5FD00AA6AA1 /* ErrorModel.swift */,
 				DBA5DB08242FE28800AA6AA1 /* UsersModel.swift */,
+				DBB23FFA2434174300A02754 /* SingleUsrModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				DBA5DAFD242FB5FD00AA6AA1 /* ErrorModel.swift in Sources */,
 				DBEE1005242EE07400574B65 /* SingUpViewController.swift in Sources */,
 				DBA5DB03242FBE9100AA6AA1 /* KeyBoardDissmis.swift in Sources */,
+				DBB23FFB2434174300A02754 /* SingleUsrModel.swift in Sources */,
 				DBEE1000242EDF6000574B65 /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
