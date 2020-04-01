@@ -96,6 +96,7 @@ class LoginViewController: UIViewController {
                             //Guardamos el correo y contraseña en UserDEfaults
                             UserDefaults.standard.set(email, forKey: "email")
                             UserDefaults.standard.set(pass, forKey: "pass")
+                            UserDefaults.standard.set(true, forKey: "isLogin")
                             UserDefaults.standard.synchronize()
                            //Presentamos el HomeScreen
                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {

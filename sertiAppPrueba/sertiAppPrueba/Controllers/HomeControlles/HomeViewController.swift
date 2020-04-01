@@ -62,6 +62,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 //Borramos los datos de UserDefaults
                 UserDefaults.standard.removeObject(forKey: "email")
                 UserDefaults.standard.removeObject(forKey: "pass")
+                UserDefaults.standard.set(false, forKey: "isLogin")
                 transitionToMain(contview: view)
             case .profile:
                 performSegue(withIdentifier: "profileSegue", sender: AnyObject.self)

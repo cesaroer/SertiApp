@@ -15,7 +15,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupElements()
+        //Si hay session del usuario guardada entonces cargamos la vista principal
+        if UserDefaults.standard.bool(forKey: "isLogin") == true{
+            print("Dirigiendo a Home")
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                 transitionToHome(contview: self.view)
+            }
+        }
+            
     }
 
 //MARK: Funcion que dará el estílo a nuestros botones
